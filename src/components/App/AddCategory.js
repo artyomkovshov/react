@@ -5,7 +5,7 @@ class AddCategory extends Component {
         return (
             <div className="App-main__add-category">
                 <input type="text" placeholder="New category"/>
-                <input type="button" value={"Add"} />
+                <input type="button" value={"Add"} className="button" />
             </div>
 
 
