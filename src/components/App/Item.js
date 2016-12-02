@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Item extends Component {
     render() {
         return (
             <li className="App-main__item">
-                <label><input type="checkbox"/><span className="item-name">This is item</span></label>
+                <label><input type="checkbox"/><span className="item-name">This is item #1</span></label>
                 <div className="item__button-block">
-                    <input type="button" className="edit-button icon" />
+                    <Link to="/edit/1" className="edit-button icon" />
                 </div>
             </li>
         );
