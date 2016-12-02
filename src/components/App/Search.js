@@ -5,7 +5,8 @@ class Search extends Component {
         return (
             <div className="App-header__search">
                 <input type="text" placeholder="Search"/>
-                <button>Go</button>
+                <input type="button" className="icon clear-button" />
+
             </div>
 
 

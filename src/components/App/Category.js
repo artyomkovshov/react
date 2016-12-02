@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
+
+
 class Category extends Component {
     render() {
         return (
-            <li className="App-main__category-item">
-                <label><button>Subs</button><span className="category-name">This is category</span></label>
-                <button>Edit</button>
+            <li style={this.props.style} className="App-main__category-item">
+                <label><input type="button" className="arrow_down icon" /><span className="category-name">This is category</span></label>
+                <input type="button" className="icon edit-button" />
                 <div className="item__button-block">
-                    <button className="item__button">Remove</button>
-                    <button className="item__button">Add</button>
+                    <input type="button" className="item__button remove-button icon" />
+                    <input type="button" className="item__button add-category-button icon" />
                 </div>
             </li>
         );

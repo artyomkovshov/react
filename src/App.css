@@ -42,38 +42,43 @@
 }
 
 .App-main__category {
-  float: left;
+  display: flex;
   margin: 2em 2em;
-  height: 800px;
   width: 30%;
+  flex-direction: column;
 }
 
 .App-main__items {
   position: relative;
-  float: right;
+  display: flex;
   margin: 2em 2em;
-  height: 800px;
   width: 60%;
 }
 
 .App-main__items-list {
+  height: 800px;
+  width: 100%;
   margin: 1em 0 0 0;
   padding: 1em 1em;
   overflow-y: scroll;
   list-style: none;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-main__category-list {
+  height: 800px;
   margin: 1em 0 0 0;
   padding: 1em 1em;
   overflow-y: scroll;
   list-style: none;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
 }
 
 .App-main__item {
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 2em 1em;
   margin: 0;
   position: relative;
@@ -84,9 +89,8 @@
 }
 
 .App-main__category-item {
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 1em;
-  margin: 0;
   position: relative;
 }
 
@@ -138,4 +142,71 @@
   margin: 0 5em;
   position: absolute;
   right: 0;
+}
+
+.items__button-block {
+  display: flex;
+  margin: 2em 0;
+  justify-content: flex-end;
+}
+
+.item__button {
+  margin: 0 2em;
+}
+
+.Edit-main__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.Edit-main__header-input {
+  width: 250px;
+  margin: 2em 0;
+}
+
+.Edit-main__text-input {
+  margin: 1em 0;
+  width: 70%;
+}
+
+.App-main__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 16px;
+}
+
+.arrow_down {
+  background-image: url('icons/arrow-down-sign-to-navigate.png');
+}
+
+.remove-button {
+
+  background-image: url(icons/garbage.png);
+}
+
+.add-category-button {
+  background-image: url(icons/plus.png);
+}
+
+.edit-button {
+  background-image: url(icons/edit.png);
+}
+
+.clear-button {
+  background-image: url(icons/clear-button.png);
+  position: relative;
+  right: 20px;
+  top: 3px;
+}
+
+.revert-button {
+  background-image: url(icons/return.png);
 }

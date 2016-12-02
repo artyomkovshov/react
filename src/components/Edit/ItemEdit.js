@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 class ItemEdit extends Component {
     render() {
         return (
-            <div className="App-main__items">
-                <button>Save Changes</button>
-                <button>Cancel</button>
-                <input type="text" placeholder="Header"/>
+            <div className="Edit-main__items">
+                <div className="items__button-block">
+                    <input type="button" value={"Save Changes"} className="item__button" />
+                    <input type="button" value={"Cancel"} className="item__button" />
+                </div>
+                <input type="text" placeholder="Header" className="Edit-main__header-input"/>
                 <label><input type="checkbox"/><span>Done</span></label>
-                <input type="text" placeholder="Description"/>
+                <textarea placeholder="Description" className="Edit-main__text-input" rows="30" cols="160"></textarea>
             </div>
         );
     }

@@ -5,7 +5,7 @@ import ItemsContainer from './ItemsContainer';
 class Wrapper extends Component {
     render() {
         return (
-            <div>
+            <div className="App-main__wrapper">
                 <CategoryContainer></CategoryContainer>
                 <ItemsContainer></ItemsContainer>
             </div>

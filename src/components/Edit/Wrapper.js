@@ -5,7 +5,7 @@ import ItemEdit from './ItemEdit';
 class Wrapper extends Component {
     render() {
         return (
-            <div>
+            <div className="App-main__wrapper">
                 <CategoryContainer/>
                 <ItemEdit/>
             </div>
