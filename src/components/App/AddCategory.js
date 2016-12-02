@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class AddCategory extends Component {
     render() {
         return (
-            <div>
+            <div className="App-main__add-category">
                 <input type="text" placeholder="New category"/>
-                <button>Add</button>
+                <input type="button" value={"Add"} />
             </div>
 
 

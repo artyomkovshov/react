@@ -5,7 +5,7 @@ class AddItem extends Component {
         return (
             <div className="App-main__add-items">
                 <input type="text" placeholder="New input"/>
-                <button>Add</button>
+                <input type="button" value={"Add"} />
             </div>
 
 

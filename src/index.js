@@ -5,6 +5,6 @@ import Edit from './Edit';
 import './index.css';
 
 ReactDOM.render(
-  <Edit />,
+  <App />,
   document.getElementById('root')
 );
